@@ -1889,14 +1889,6 @@ main {
   margin: 5px 10px 5px 2px;
   padding: 10px;
 }
-
-.viewAllCta {
-  margin: 0px 80px 20px 0px;
-}
-
-.international.ae .viewAllCta {
-  margin: -1px auto auto 80px;
-}
 .allCardsHeader {
   font-size: calc(var(--font-scale, 1) * 30px) !important;
   color: black !important;
