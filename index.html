@@ -1,921 +1,1532 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>mmtClone</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-  <title>mmtClone</title>
-</head>
-
-<body>
-  <div class="bgGradient landingPageBg">
-    <div class="landingContainer">
-      <div class="headBar makeFlex hrtlCenter prependTop5 appendBottom40">
-        <a class="mmtLogo makeFlex" href="/">
-          <img src="./assets/mmtLogoWhite.png" alt="mmtlogo" aria-label="logo" />
-        </a>
-        <ul class="userSection pushRight">
-          <li class="makeFlex perfectCenter makeRelative">
-            <span class="headerOfferIcon__offericonCont">
-              <span class="headerOfferIcon--text">%</span>
-              <img class="chSprite chDiscount headerOfferIcon" src="./assets/badge.png" alt="badge" />
-            </span>
-            <div class="flexOne">
-              <p class="font12 whiteText latoBlack">Super Offers</p>
-              <p class="font10 userPerText appendTop3">
-                Explore great deals &amp; offers
-              </p>
-            </div>
-          </li>
-          <li class="makeFlex perfectCenter makeRelative myBizIntro" id="showBizUpgradePopup">
-            <img class="appendRight10 landingSprite myBizIcon" src="./assets//mybiz.png" alt="mybiz" />
-
-            <div class="appendRight5">
-              <p class="whiteText">
-                <span class="latoBold">Introducing myBiz</span>
-              </p>
-              <p class="font10 whiteText">Business Travel Solution</p>
-            </div>
-          </li>
-          <li class="makeFlex hrtlCenter lhMyTrips">
-            <img class="landingSprite myTripsIcon appendRight10" src="./assets/myTripsIcon.png" alt="myTripsIcon" />
-            <div class="makeFlex column flexOne font10 latoBold">
-              <p class="whiteText appendBottom3 font11">My Trips</p>
-              <p class="userPerText">Manage your bookings</p>
-            </div>
-          </li>
-          <li class="makeFlex hrtlCenter font10 makeRelative lhUser userLoggedOut">
-            <span class="userNameIcon whiteText makeFlex perfectCenter latoBlack appendRight10">
-              <img class="landingSprite myIconWhite" src="./assets/myIconWhite.png" alt="myIconWhite" />
-            </span>
-            <div class="makeFlex column flexOne whiteText latoBold">
-              <p>
-                <!-- -->Login or Create Account
-              </p>
-            </div>
-          </li>
-          <li class="makeFlex column makeRelative vrtlCenter conCurLang geoSwitcher">
-            <div data-cy="LanguageSwitcherWidget" class="whiteText makeFlex perfectCenter langSlct">
-              <img class="flags flagSprite appendRight5 in" src="./assets/india-flag.webp" alt="india-flag" />
-              <span class="latoBold capText font11">
-                <span>IN</span> |<span> eng</span> |<span> inr</span></span><span data-cy="switcherDownArrow"
-                class="switcherDownArrow appendLeft10">
+  <body>
+    <div class="bgGradient landingPageBg">
+      <div class="landingContainer">
+        <div class="headBar makeFlex hrtlCenter prependTop5 appendBottom40">
+          <a class="mmtLogo makeFlex" href="/">
+            <img
+              src="./assets/mmtLogoWhite.png"
+              alt="mmtlogo"
+              aria-label="logo"
+            />
+          </a>
+          <ul class="userSection pushRight">
+            <li class="makeFlex perfectCenter makeRelative">
+              <span class="headerOfferIcon__offericonCont">
+                <span class="headerOfferIcon--text">%</span>
+                <img
+                  class="chSprite chDiscount headerOfferIcon"
+                  src="./assets/badge.png"
+                  alt="badge"
+                />
               </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="headerOuter">
-      <span class="headerModuleFedTest2"></span>
-      <div class="chHeaderWrapper navOnly">
-        <div class="chHeaderContainer">
-          <nav class="">
-            <ul class="makeFlex font12">
-              <li class="menu_Flights">
-                <div>
-                  <a href="https://www.makemytrip.com/flights/" class="makeFlex hrtlCenter column active"><span
-                      class="chNavIcon appendBottom2 chSprite chFlights active"></span><span
-                      class="chNavText darkGreyText">
-                      <!-- -->Flights
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Hotels" class="menu_Hotels">
-                <div>
-                  <a href="https://www.makemytrip.com/hotels/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chHotels"></span><span class="chNavText darkGreyText">
-                      <!-- -->Hotels
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Homestays" class="menu_Homestays">
-                <div>
-                  <a href="https://www.makemytrip.com/homestays/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chHomestays"></span><span class="chNavText darkGreyText">
-                      <!-- -->Homestays
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Holidays" class="menu_Holidays removeItemMargin">
-                <div>
-                  <a href="https://www.makemytrip.com/holidays-india/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chHolidays"></span><span class="chNavText darkGreyText">
-                      <!-- -->Holiday Packages
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Trains" class="menu_Trains">
-                <div>
-                  <a href="https://www.makemytrip.com/railways/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chTrains"></span><span class="chNavText darkGreyText">
-                      <!-- -->Trains
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Buses" class="menu_Buses">
-                <div>
-                  <a href="https://www.makemytrip.com/bus-tickets/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chBuses"></span><span class="chNavText darkGreyText">
-                      <!-- -->Buses
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Cabs" class="menu_Cabs">
-                <div>
-                  <a href="https://www.makemytrip.com/cabs/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chCabs"></span><span class="chNavText darkGreyText">
-                      <!-- -->Cabs
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Forex" class="menu_Forex">
-                <div>
-                  <a href="https://www.makemytrip.com/forex/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chForex"></span><span class="chNavText darkGreyText">
-                      <!-- -->Forex
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-              <li data-cy="menu_Charters" class="menu_Charters">
-                <div>
-                  <a href="https://www.makemytrip.com/charter-flights/" class="makeFlex hrtlCenter column"><span
-                      class="chNavIcon appendBottom2 chSprite chCharterFlights"></span><span
-                      class="chNavText darkGreyText reduceMenuSpacing">
-                      <!-- -->Charter Flights
-                      <!-- -->
-                    </span></a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+              <div class="flexOne">
+                <p class="font12 whiteText latoBlack">Super Offers</p>
+                <p class="font10 userPerText appendTop3">
+                  Explore great deals &amp; offers
+                </p>
+              </div>
+            </li>
+            <li
+              class="makeFlex perfectCenter makeRelative myBizIntro"
+              id="showBizUpgradePopup"
+            >
+              <img
+                class="appendRight10 landingSprite myBizIcon"
+                src="./assets//mybiz.png"
+                alt="mybiz"
+              />
+
+              <div class="appendRight5">
+                <p class="whiteText">
+                  <span class="latoBold">Introducing myBiz</span>
+                </p>
+                <p class="font10 whiteText">Business Travel Solution</p>
+              </div>
+            </li>
+            <li class="makeFlex hrtlCenter lhMyTrips">
+              <img
+                class="landingSprite myTripsIcon appendRight10"
+                src="./assets/myTripsIcon.png"
+                alt="myTripsIcon"
+              />
+              <div class="makeFlex column flexOne font10 latoBold">
+                <p class="whiteText appendBottom3 font11">My Trips</p>
+                <p class="userPerText">Manage your bookings</p>
+              </div>
+            </li>
+            <li
+              class="makeFlex hrtlCenter font10 makeRelative lhUser userLoggedOut"
+            >
+              <span
+                class="userNameIcon whiteText makeFlex perfectCenter latoBlack appendRight10"
+              >
+                <img
+                  class="landingSprite myIconWhite"
+                  src="./assets/myIconWhite.png"
+                  alt="myIconWhite"
+                />
+              </span>
+              <div class="makeFlex column flexOne whiteText latoBold">
+                <p><!-- -->Login or Create Account</p>
+              </div>
+            </li>
+            <li
+              class="makeFlex column makeRelative vrtlCenter conCurLang geoSwitcher"
+            >
+              <div class="whiteText makeFlex perfectCenter langSlct">
+                <img
+                  class="flags flagSprite appendRight5 in"
+                  src="./assets/india-flag.webp"
+                  alt="india-flag"
+                />
+                <span class="latoBold capText font11">
+                  <span>IN</span> |<span> eng</span> |<span> inr</span></span
+                ><span class="switcherDownArrow appendLeft10"> </span>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="minContainer">
-      <div>
-        <div data-cy="flightSW" class="widgetSection landingSearchWidget appendBottom40 primaryTraveler">
-          <div class="makeFlex hrtlCenter">
-            <ul class="fswTabs latoRegular darkGreyText">
-              <li data-cy="oneWayTrip" class="selected">
-                <span class="tabsCircle appendRight5"></span>One Way
-              </li>
-              <li data-cy="roundTrip" class="">
-                <span class="tabsCircle appendRight5"></span>Round Trip
-              </li>
-              <li data-cy="mulitiCityTrip" class="">
-                <span class="tabsCircle appendRight5"></span>Multi City
-              </li>
-            </ul>
-            <div class="pushRight">
-              <p class="widgetTitle flexOne">
-                Book&nbsp;
-                <a href="/international-flights/" class="darkGreyText">International</a>&nbsp;and&nbsp;
-                <a href="/flights/" class="darkGreyText">Domestic Flights</a>
-              </p>
-            </div>
+      <div class="headerOuter">
+        <span class="headerModuleFedTest2"></span>
+        <div class="chHeaderWrapper navOnly">
+          <div class="chHeaderContainer">
+            <nav class="">
+              <ul class="makeFlex font12">
+                <li class="menu_Flights">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/flights/"
+                      class="makeFlex hrtlCenter column active"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chFlights active"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Flights
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Hotels">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/hotels/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chHotels"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Hotels
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Homestays">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/homestays/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chHomestays"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Homestays
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Holidays removeItemMargin">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/holidays-india/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chHolidays"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Holiday Packages
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Trains">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/railways/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chTrains"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Trains
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Buses">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/bus-tickets/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chBuses"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Buses
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Cabs">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/cabs/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chCabs"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Cabs
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Forex">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/forex/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chForex"
+                      ></span
+                      ><span class="chNavText darkGreyText">
+                        <!-- -->Forex
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+                <li class="menu_Charters">
+                  <div>
+                    <a
+                      href="https://www.makemytrip.com/charter-flights/"
+                      class="makeFlex hrtlCenter column"
+                      ><span
+                        class="chNavIcon appendBottom2 chSprite chCharterFlights"
+                      ></span
+                      ><span class="chNavText darkGreyText reduceMenuSpacing">
+                        <!-- -->Charter Flights
+                        <!-- -->
+                      </span></a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="fsw">
-            <div class="fsw_inner returnPersuasion">
-              <div class="fsw_inputBox searchCity inactiveWidget">
-                <label for="fromCity"><span class="lbl_input appendBottom10">From</span>
-                  <input data-cy="fromCity" id="fromCity" type="text"
-                    class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi" />
-                  <p class="code makeRelative" title="DEL, Delhi Airport India">
-                    <span data-cy="defaultFromValue" title="" class="truncate airPortName">DEL, Delhi Airport
-                      India</span>
-                  </p>
-                </label>
+        </div>
+      </div>
+      <div class="minContainer">
+        <div>
+          <div
+            class="widgetSection landingSearchWidget appendBottom40 primaryTraveler"
+          >
+            <div class="makeFlex hrtlCenter">
+              <ul class="fswTabs latoRegular darkGreyText">
+                <li class="selected">
+                  <span class="tabsCircle appendRight5"></span>One Way
+                </li>
+                <li class="">
+                  <span class="tabsCircle appendRight5"></span>Round Trip
+                </li>
+                <li class="">
+                  <span class="tabsCircle appendRight5"></span>Multi City
+                </li>
+              </ul>
+              <div class="pushRight">
+                <p class="widgetTitle flexOne">
+                  Book&nbsp;
+                  <a href="/international-flights/" class="darkGreyText"
+                    >International</a
+                  >&nbsp;and&nbsp;
+                  <a href="/flights/" class="darkGreyText">Domestic Flights</a>
+                </p>
               </div>
-              <span class="swipCircle">
-                <span class="landingSprite swipIcon"></span>
-              </span>
-              <div class="fsw_inputBox searchToCity inactiveWidget">
-                <label for="toCity">
-                  <span class="lbl_input appendBottom10">To</span>
-                  <input data-cy="toCity" id="toCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30"
-                    readonly="" value="Bengaluru" />
-                  <p class="code makeRelative" title="BLR, Bengaluru International Airport India">
-                    <span data-cy="defaultToValue" title="" class="truncate airPortName">BLR, Bengaluru International
-                      Airport India</span>
-                  </p>
-                </label>
-              </div>
-              <div class="fsw_inputBox dates inactiveWidget">
-                <label for="departure">
-                  <span class="lbl_input appendBottom10">Departure</span>
-                  <input data-cy="departure" id="departure" type="text" class="fsw_inputField font20" readonly=""
-                    value="Monday, 10 Jul 2023" />
-                  <p data-cy="departureDate" class="blackText font20 code lineHeight36">
-                    <span class="font30 latoBlack">11 </span>
-                    <span>Jul</span>
-                    <span class="shortYear">23</span>
-                  </p>
-                  <p data-cy="departureDay" class="code">Tuesday</p>
-                </label>
-              </div>
-              <div class="fsw_inputBox dates reDates inactiveWidget">
-                <div class="returnPersuasionTooltip hide">
-                  <p>
-                    Return fares may hike due to high demand. Book now using
-                    myBiz special fare &amp; cancel/change date for FREE later
-                    if plan changes
-                  </p>
-                </div>
-                <div data-cy="returnArea">
-                  <label>
-                    <span class="lbl_input appendBottom10">Return</span>
-                    <p data-cy="returnDefaultText" class="latoBlack font12 greyText lineHeight16">
-                      Tap to add a return date for bigger discounts
+            </div>
+            <div class="fsw">
+              <div class="fsw_inner returnPersuasion">
+                <div class="fsw_inputBox searchCity inactiveWidget">
+                  <label for="fromCity"
+                    ><span class="lbl_input appendBottom10">From</span>
+                    <input
+                      id="fromCity"
+                      type="text"
+                      class="fsw_inputField lineHeight36 latoBlack font30"
+                      readonly=""
+                      value="Delhi"
+                    />
+                    <p
+                      class="code makeRelative"
+                      title="DEL, Delhi Airport India"
+                    >
+                      <span title="" class="truncate airPortName"
+                        >DEL, Delhi Airport India</span
+                      >
                     </p>
                   </label>
                 </div>
-              </div>
-              <div data-cy="flightTraveller" class="fsw_inputBox flightTravllers inactiveWidget">
-                <label for="travellers">
-                  <span class="lbl_input appendBottom5">Travellers &amp; Class</span>
-                  <input data-cy="travellers" id="travellers" type="text" class="fsw_inputField font30 latoBlack"
-                    readonly="" value="0 Infant, 0 Adult, 1 Children" />
-                  <p data-cy="travellerText" class="blackText font20 code lineHeight36">
-                    <span class="appendRight10"><span class="font30 latoBlack">1&nbsp;</span>Traveller</span>
-                  </p>
-                  <p class="appendBottom1">Economy/Premium Economy</p>
-                  <div class="introGBFlt">
-                    <div class="introGBFltTooltip whiteText">
-                      Save on bookings with more than 9 travellers
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="makeFlex hrtlCenter appendBottom20 flightFare">
-              <div class="makeFlex hrtlCenter">
-                <span class="font12 latoBold noShrink appendRight5 selectFareText">Select A <br />Fare Type:
+                <span class="swipCircle">
+                  <span class="landingSprite swipIcon"></span>
                 </span>
-                <ul class="specialFareNew">
-                  <li class="font12 blackText wrapFilter activeItem">
-                    <p class="">
-                      Regular <br />
-                      Fares
+                <div class="fsw_inputBox searchToCity inactiveWidget">
+                  <label for="toCity">
+                    <span class="lbl_input appendBottom10">To</span>
+                    <input
+                      id="toCity"
+                      type="text"
+                      class="fsw_inputField lineHeight36 latoBlack font30"
+                      readonly=""
+                      value="Bengaluru"
+                    />
+                    <p
+                      class="code makeRelative"
+                      title="BLR, Bengaluru International Airport India"
+                    >
+                      <span title="" class="truncate airPortName"
+                        >BLR, Bengaluru International Airport India</span
+                      >
                     </p>
-                  </li>
-                  <li class="font12 blackText wrapFilter">
-                    <p class="">
-                      Armed Forces <br />
-                      Fares
+                  </label>
+                </div>
+                <div class="fsw_inputBox dates inactiveWidget">
+                  <label for="departure">
+                    <span class="lbl_input appendBottom10">Departure</span>
+                    <input
+                      id="departure"
+                      type="text"
+                      class="fsw_inputField font20"
+                      readonly=""
+                      value="Monday, 10 Jul 2023"
+                    />
+                    <p class="blackText font20 code lineHeight36">
+                      <span class="font30 latoBlack">11 </span>
+                      <span>Jul</span>
+                      <span class="shortYear">23</span>
                     </p>
-                    <div class="specialFareTooltip whiteText">
-                      <p class="font12 latoBold appendBottom5">
-                        Armed Forces Fares
+                    <p class="code">Tuesday</p>
+                  </label>
+                </div>
+                <div class="fsw_inputBox dates reDates inactiveWidget">
+                  <div class="returnPersuasionTooltip hide">
+                    <p>
+                      Return fares may hike due to high demand. Book now using
+                      myBiz special fare &amp; cancel/change date for FREE later
+                      if plan changes
+                    </p>
+                  </div>
+                  <div>
+                    <label>
+                      <span class="lbl_input appendBottom10">Return</span>
+                      <p class="latoBlack font12 greyText lineHeight16">
+                        Tap to add a return date for bigger discounts
                       </p>
-                      <p class="font11">
-                        Applicable for serving and retired personnel of Armed
-                        Forces and Paramilitary Forces, their recognised
-                        dependants like spouses and children, and war widows.
-                        It is mandatory to show a valid ID or dependant card
-                        at the airport, without which boarding might be
-                        denied.
-                      </p>
+                    </label>
+                  </div>
+                </div>
+                <div class="fsw_inputBox flightTravllers inactiveWidget">
+                  <label for="travellers">
+                    <span class="lbl_input appendBottom5"
+                      >Travellers &amp; Class</span
+                    >
+                    <input
+                      id="travellers"
+                      type="text"
+                      class="fsw_inputField font30 latoBlack"
+                      readonly=""
+                      value="0 Infant, 0 Adult, 1 Children"
+                    />
+                    <p class="blackText font20 code lineHeight36">
+                      <span class="appendRight10"
+                        ><span class="font30 latoBlack">1&nbsp;</span
+                        >Traveller</span
+                      >
+                    </p>
+                    <p class="appendBottom1">Economy/Premium Economy</p>
+                    <div class="introGBFlt">
+                      <div class="introGBFltTooltip whiteText">
+                        Save on bookings with more than 9 travellers
+                      </div>
                     </div>
-                  </li>
-                  <li class="font12 blackText wrapFilter">
-                    <p class="">
-                      Student <br />
-                      Fares
-                    </p>
-                    <div class="specialFareTooltip whiteText">
-                      <p class="font12 latoBold appendBottom5">
-                        Student Fares
-                      </p>
-                      <p class="font11">
-                        Only students above 12 years of age are eligible for
-                        special fares and/or additional baggage allowances.
-                        Carrying valid student ID cards and student visas
-                        (where applicable) is mandatory, else the passenger
-                        may be denied boarding or asked to pay for extra
-                        baggage.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="font12 blackText wrapFilter">
-                    <p class="">
-                      Senior Citizen <br />
-                      Fares
-                    </p>
-                    <div class="specialFareTooltip whiteText">
-                      <p class="font12 latoBold appendBottom5">
-                        Senior Citizen Fares
-                      </p>
-                      <p class="font11">
-                        Only senior citizens above the age of 60 years can
-                        avail this special fare. It is mandatory to produce
-                        proof of Date of Birth at the airport, without which
-                        prevailing fares will be charged.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="font12 blackText wrapFilter">
-                    <p class="">
-                      Doctors &amp; Nurses <br />
-                      Fares
-                    </p>
-                    <div class="specialFareTooltip whiteText">
-                      <p class="font12 latoBold appendBottom5">
-                        Doctors &amp; Nurses Fares
-                      </p>
-                      <p class="font11">
-                        Applicable only for medical personnel. It is mandatory
-                        to show a valid ID at the airport, without which
-                        boarding may be denied.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="font12 blackText wrapFilter">
-                    <p class="">
-                      Double Seat <br />
-                      Fares
-                    </p>
-                    <div class="specialFareTooltip whiteText">
-                      <p class="font12 latoBold appendBottom5">
-                        Fly Safer with Double Seat
-                      </p>
-                      <p class="font11">
-                        Step up physical distancing by booking two or three
-                        adjacent seats for one traveller. Opt from ‘Double/
-                        Entire Row’ by Indigo or ‘GoMore’ service by GoAir -
-                        available only for domestic one-way economy class
-                        bookings.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+                  </label>
+                </div>
               </div>
-              <div class="makeFlex perfectCenter appendleft10 recentSearchGrid">
-                <span class="font12 latoBold">Trending Searches:</span>
-                <ul class="flt-recentSearches makeFlex">
-                  <li class="appendLeft10">
-                    <a class="darkGreyText">
-                      <p class="font12 appendBottom3">
-                        Bengaluru<span class="blueOnewayArrowIcon landingSprite appendLeft5 appendRight5">
-                        </span>London
+              <div class="makeFlex hrtlCenter appendBottom20 flightFare">
+                <div class="makeFlex hrtlCenter">
+                  <span
+                    class="font12 latoBold noShrink appendRight5 selectFareText"
+                    >Select A <br />Fare Type:
+                  </span>
+                  <ul class="specialFareNew">
+                    <li class="font12 blackText wrapFilter activeItem">
+                      <p class="">
+                        Regular <br />
+                        Fares
                       </p>
-                    </a>
-                  </li>
-                  <li class="appendLeft10">
-                    <a class="darkGreyText">
-                      <p class="font12 appendBottom3">
-                        Delhi<span class="blueOnewayArrowIcon landingSprite appendLeft5 appendRight5"></span>Dubai
+                    </li>
+                    <li class="font12 blackText wrapFilter">
+                      <p class="">
+                        Armed Forces <br />
+                        Fares
                       </p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p data-cy="submit" class="makeFlex vrtlCenter">
-              <a class="primaryBtn font24 latoBold widgetSearchBtn">Search</a>
-            </p>
-          </div>
-        </div>
-        <main class="landingContainer">
-          <main class="landingContainer minHeight0">
-            <div data-cy="tertiaryRowContainer" class="choosFrom appendBottom20">
-              <div data-cy="tertiaryRowHeaderContainer" class="choosFrom__header">
-                <img
-                  data-cy="tertiaryRowHeaderIconLeft" class="icDoubleDownArrow"
-                  src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_downArrow.png"
-                  alt="chooseHeaderIcon">
-                  <span data-cy="tertiaryRowHeaderText"
-                  class="choosFrom__header--text defaultCursor">Explore More</span>
-                  <img
-                  data-cy="tertiaryRowHeaderIconRight" class="icDoubleDownArrow"
-                  src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_downArrow.png" alt="chooseHeaderIcon">
-              </div>
-              <div class="choosFrom__wrap">
-                <ul data-cy="tertiaryRowItemsContainer" class="choosFrom__list">
-                  <li class="choosFrom__list--item" data-cy="tertiaryRowItem_Where2Go"><span
-                      data-cy="tertiaryRowIcon_Where2Go" class="appendRight12"><img
-                        src="https://promos.makemytrip.com/appfest/2x/icon-wheretogo-23062022.png" alt="Where2Go_image"
-                        style="width: 28px; height: 28px;"></span>
-                    <div class="choosFrom__list--itemDesc makeFlex column flexOne">
-                      <p data-cy="tertiaryRowTitle_Where2Go" class="font14"><span>Where2Go</span></p>
-                    </div>
-                  </li>
-                  <li class="choosFrom__list--item" data-cy="tertiaryRowItem_Insurance"><span
-                      data-cy="tertiaryRowIcon_Insurance" class="appendRight12"><img
-                        src="https://promos.makemytrip.com/appfest/2x/trip-money-1.png" alt="Insurance_image"
-                        style="width: 28px; height: 28px;"></span>
-                    <div class="choosFrom__list--itemDesc makeFlex column flexOne">
-                      <p data-cy="tertiaryRowTitle_Insurance" class="font14"><span>Insurance</span></p><span
-                        data-cy="tertiaryRowSubTitle_For International Trips" class="appendTop3 font12">For
-                        International Trips</span>
-                    </div>
-                  </li>
-                  <li class="choosFrom__list--item"
-                    data-cy="tertiaryRowItem_<span class='latoBold blackText font14'>Explore International Flights</span>">
-                    <span
-                      data-cy="tertiaryRowIcon_<span class='latoBold blackText font14'>Explore International Flights</span>"
-                      class="appendRight12 choosFrom__list--itemIcon"><img
-                        src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_flights.png"
-                        alt="<span class='latoBold blackText font14'>Explore International Flights</span>_image"
-                        style="width: 28px; height: 28px;"></span>
-                    <div class="choosFrom__list--itemDesc makeFlex column flexOne">
-                      <p data-cy="tertiaryRowTitle_<span class='latoBold blackText font14'>Explore International Flights</span>"
-                        class="font14"><span><span class="latoBold blackText font14">Explore International
-                            Flights</span></span></p><span
-                        data-cy="tertiaryRowSubTitle_Cheapest Flights to Paris, Bali, Tokyo &amp; more"
-                        class="appendTop3 font12">Cheapest Flights to Paris, Bali, Tokyo &amp; more</span>
-                    </div>
-                  </li>
-                  <li class="choosFrom__list--item" data-cy="tertiaryRowItem_MICE"><span data-cy="tertiaryRowIcon_MICE"
-                      class="appendRight12"><img
-                        src="https://promos.makemytrip.com/images/myBiz/MICE/mice%20icon%20-%20square.png"
-                        alt="MICE_image" style="width: 28px; height: 28px;"></span>
-                    <div class="choosFrom__list--itemDesc makeFlex column flexOne">
-                      <p data-cy="tertiaryRowTitle_MICE" class="font14"><span>MICE</span></p><span
-                        data-cy="tertiaryRowSubTitle_Offsites, Events &amp; Meetings"
-                        class="appendTop3 font12">Offsites, Events &amp; Meetings</span>
-                    </div>
-                  </li>
-                  <li class="choosFrom__list--item" data-cy="tertiaryRowItem_Gift Cards"><span
-                      data-cy="tertiaryRowIcon_Gift Cards" class="appendRight12"><img
-                        src="https://promos.makemytrip.com/appfest/2x/gift%20card%201.png" alt="Gift Cards_image"
-                        style="width: 28px; height: 28px;"></span>
-                    <div class="choosFrom__list--itemDesc makeFlex column flexOne">
-                      <p data-cy="tertiaryRowTitle_Gift Cards" class="font14"><span>Gift Cards</span></p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="landingCard appendBottom20 superOfferSection page-section sticky-scroll personalOffers"
-              id="Offers_Listing">
-              <div class="makeFlex blackText appendBottom20">
-                <h2 class="fontFamilyHeading allCardsHeader">
-                  <font color="#393939">Offers</font>
-                </h2>
-                <div class="makeFlex perfectCenter">
-                  <ul data-cy="SuperOffers" class="makeFlex nrlText superOffersTab appendLeft30">
-                    <li data-cy="ALL" class="active latoBlack"><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_ALL"><span> All Offers </span></a></li>
-                    <li data-cy="BANK_OFFERS" class=""><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_BANK_OFFERS"><span> Bank Offers </span></a></li>
-                    <li data-cy="FLIGHTS" class=""><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_FLIGHTS"><span> Flights </span></a></li>
-                    <li data-cy="HOTELS" class=""><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_HOTELS"><span> Hotels </span></a></li>
-                    <li data-cy="HOLIDAYS" class=""><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_HOLIDAYS"><span> Holidays </span></a></li>
-                    <li data-cy="RAILS" class=""><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_RAILS"><span> Trains </span></a></li>
-                    <li data-cy="CABS" class=""><a class="makeFlex hrtlCenter column darkGreyText"
-                        id="superOffersTab_CABS"><span> Cabs </span></a></li>
+                      <div class="specialFareTooltip whiteText">
+                        <p class="font12 latoBold appendBottom5">
+                          Armed Forces Fares
+                        </p>
+                        <p class="font11">
+                          Applicable for serving and retired personnel of Armed
+                          Forces and Paramilitary Forces, their recognised
+                          dependants like spouses and children, and war widows.
+                          It is mandatory to show a valid ID or dependant card
+                          at the airport, without which boarding might be
+                          denied.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="font12 blackText wrapFilter">
+                      <p class="">
+                        Student <br />
+                        Fares
+                      </p>
+                      <div class="specialFareTooltip whiteText">
+                        <p class="font12 latoBold appendBottom5">
+                          Student Fares
+                        </p>
+                        <p class="font11">
+                          Only students above 12 years of age are eligible for
+                          special fares and/or additional baggage allowances.
+                          Carrying valid student ID cards and student visas
+                          (where applicable) is mandatory, else the passenger
+                          may be denied boarding or asked to pay for extra
+                          baggage.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="font12 blackText wrapFilter">
+                      <p class="">
+                        Senior Citizen <br />
+                        Fares
+                      </p>
+                      <div class="specialFareTooltip whiteText">
+                        <p class="font12 latoBold appendBottom5">
+                          Senior Citizen Fares
+                        </p>
+                        <p class="font11">
+                          Only senior citizens above the age of 60 years can
+                          avail this special fare. It is mandatory to produce
+                          proof of Date of Birth at the airport, without which
+                          prevailing fares will be charged.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="font12 blackText wrapFilter">
+                      <p class="">
+                        Doctors &amp; Nurses <br />
+                        Fares
+                      </p>
+                      <div class="specialFareTooltip whiteText">
+                        <p class="font12 latoBold appendBottom5">
+                          Doctors &amp; Nurses Fares
+                        </p>
+                        <p class="font11">
+                          Applicable only for medical personnel. It is mandatory
+                          to show a valid ID at the airport, without which
+                          boarding may be denied.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="font12 blackText wrapFilter">
+                      <p class="">
+                        Double Seat <br />
+                        Fares
+                      </p>
+                      <div class="specialFareTooltip whiteText">
+                        <p class="font12 latoBold appendBottom5">
+                          Fly Safer with Double Seat
+                        </p>
+                        <p class="font11">
+                          Step up physical distancing by booking two or three
+                          adjacent seats for one traveller. Opt from ‘Double/
+                          Entire Row’ by Indigo or ‘GoMore’ service by GoAir -
+                          available only for domestic one-way economy class
+                          bookings.
+                        </p>
+                      </div>
+                    </li>
                   </ul>
-                </div><span data-cy="viewAllCta"
-                  class="pushRight makeFlex hrtlCenter font16 blueText latoBlack cursorPointer">View All<span
-                    class="blueArrowIcon landingSprite appendLeft10"></span></span>
+                </div>
+                <div
+                  class="makeFlex perfectCenter appendleft10 recentSearchGrid"
+                >
+                  <span class="font12 latoBold">Trending Searches:</span>
+                  <ul class="flt-recentSearches makeFlex">
+                    <li class="appendLeft10">
+                      <a class="darkGreyText">
+                        <p class="font12 appendBottom3">
+                          Bengaluru<span
+                            class="blueOnewayArrowIcon landingSprite appendLeft5 appendRight5"
+                          >
+                          </span
+                          >London
+                        </p>
+                      </a>
+                    </li>
+                    <li class="appendLeft10">
+                      <a class="darkGreyText">
+                        <p class="font12 appendBottom3">
+                          Delhi<span
+                            class="blueOnewayArrowIcon landingSprite appendLeft5 appendRight5"
+                          ></span
+                          >Dubai
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div data-cy="superOffers" class="landingCardSlider superOffers" style="direction: ltr;">
-                <div class="slick-slider slick-initialized" dir="ltr">
-                  <div class="slick-list">
-                    <div class="slick-track" style="width: 23716px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                      <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
-                        aria-hidden="false" style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-0"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=flights&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage0"><img
-                                      src="https://promos.makemytrip.com/notification/xhdpi//12345678987654321.jpg?im=Resize=(134,134)"
-                                      height="134" width="134" alt="" loading="lazy"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel0" class="capText appendBottom5">DOM FLIGHTS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl0"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to 20% OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx0" class="font14 lineHeight16">on Domestic Flights &amp;
-                                    Bring Your Travel Dreams to Life. </p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl0"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText0"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div data-cy="suUrl-1"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?tab=hotels&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage1"><img
-                                      src="https://promos.makemytrip.com/notification/xhdpi//DH-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
-                                      height="134" width="134" alt="" loading="lazy"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel1" class="capText appendBottom5">DOM HOTELS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl1"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to 40% OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx1" class="font14 lineHeight16">on Hotels in India &amp; Bring
-                                    Your Travel Dreams to Life.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl1"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText1"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+              <p class="makeFlex vrtlCenter">
+                <a class="primaryBtn font24 latoBold widgetSearchBtn">Search</a>
+              </p>
+            </div>
+          </div>
+          <main class="landingContainer">
+            <main class="landingContainer minHeight0">
+              <div class="choosFrom appendBottom20">
+                <div class="choosFrom__header">
+                  <img
+                    class="icDoubleDownArrow"
+                    src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_downArrow.png"
+                    alt="chooseHeaderIcon"
+                  />
+                  <span class="choosFrom__header--text defaultCursor"
+                    >Explore More</span
+                  >
+                  <img
+                    class="icDoubleDownArrow"
+                    src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_downArrow.png"
+                    alt="chooseHeaderIcon"
+                  />
+                </div>
+                <div class="choosFrom__wrap">
+                  <ul class="choosFrom__list">
+                    <li class="choosFrom__list--item">
+                      <span class="appendRight12"
+                        ><img
+                          src="https://promos.makemytrip.com/appfest/2x/icon-wheretogo-23062022.png"
+                          alt="Where2Go_image"
+                          style="width: 28px; height: 28px"
+                      /></span>
+                      <div
+                        class="choosFrom__list--itemDesc makeFlex column flexOne"
+                      >
+                        <p class="font14"><span>Where2Go</span></p>
                       </div>
-                      <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
-                        style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-2"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=flights&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage2"><img
-                                      src="https://promos.makemytrip.com/notification/xhdpi//12234346567.jpg?im=Resize=(134,134)"
-                                      height="134" width="134" alt="" loading="lazy"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel2" class="capText appendBottom5">INTL FLIGHTS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl2"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to ₹15,000
-                                    OFF*</p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx2" class="font14 lineHeight16">on International Flights &amp;
-                                    Bring Your Travel Dreams to Life.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl2"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText2"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div data-cy="suUrl-3"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?tab=hotels&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage3"><img
-                                      src="https://promos.makemytrip.com/notification/xhdpi//IH-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
-                                      height="134" width="134" alt="" loading="lazy"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel3" class="capText appendBottom5">INTL HOTELS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl3"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to 30% OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx3" class="font14 lineHeight16">on International Hotels &amp;
-                                    Bring Your Travel Dreams to Life.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl3"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText3"
-                                    class="font14 primaryText latoBlack pushRight capText">BOOK NOW</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    </li>
+                    <li class="choosFrom__list--item">
+                      <span class="appendRight12"
+                        ><img
+                          src="https://promos.makemytrip.com/appfest/2x/trip-money-1.png"
+                          alt="Insurance_image"
+                          style="width: 28px; height: 28px"
+                      /></span>
+                      <div
+                        class="choosFrom__list--itemDesc makeFlex column flexOne"
+                      >
+                        <p class="font14"><span>Insurance</span></p>
+                        <span class="appendTop3 font12"
+                          >For International Trips</span
+                        >
                       </div>
-                      <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
-                        style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-4"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?tab=holidays&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage4"><img
-                                      src="https://promos.makemytrip.com/notification/xhdpi//Hol-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
-                                      height="134" width="134" alt="" loading="lazy"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel4" class="capText appendBottom5">HOLIDAYS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl4"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to 35% OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx4" class="font14 lineHeight16">on Holiday Packages &amp;
-                                    Bring Your Travel Dreams to Life.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl4"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText4"
-                                    class="font14 primaryText latoBlack pushRight capText">BOOK NOW</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div data-cy="suUrl-5"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=cabs&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage5"><img
-                                      src="https://promos.makemytrip.com/notification/xhdpi//OSCabs-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
-                                      height="134" width="134" alt="" loading="lazy"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel5" class="capText appendBottom5">CABS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl5"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Bring Your Travel
-                                    Dreams to Life With:</p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx5" class="font14 lineHeight16">Flat 10% OFF* on Outstation
-                                    Cabs.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl5"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText5"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    </li>
+                    <li class="choosFrom__list--item">
+                      <span class="appendRight12 choosFrom__list--itemIcon"
+                        ><img
+                          src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_flights.png"
+                          alt="<span class='latoBold blackText font14'>Explore International Flights</span>_image"
+                          style="width: 28px; height: 28px"
+                      /></span>
+                      <div
+                        class="choosFrom__list--itemDesc makeFlex column flexOne"
+                      >
+                        <p class="font14">
+                          <span
+                            ><span class="latoBold blackText font14"
+                              >Explore International Flights</span
+                            ></span
+                          >
+                        </p>
+                        <span class="appendTop3 font12"
+                          >Cheapest Flights to Paris, Bali, Tokyo &amp;
+                          more</span
+                        >
                       </div>
-                      <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true"
-                        style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-6"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?tab=hotels&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage6"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel6" class="capText appendBottom5">DOM HOTELS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl6"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to 50% OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx6" class="font14 lineHeight16">on Homestays &amp; Villas in
-                                    India and Bring Your Travel Dreams to Life.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl6"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText6"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div data-cy="suUrl-7"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=cabs&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage7"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel7" class="capText appendBottom5">CABS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl7"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Flat 5% OFF*</p>
-                                  <span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx7" class="font14 lineHeight16">on Airport Cabs &amp; Bring
-                                    Your Travel Dreams to Life.</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl7"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText7"
-                                    class="font14 primaryText latoBlack pushRight capText">View Details</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    </li>
+                    <li class="choosFrom__list--item">
+                      <span class="appendRight12"
+                        ><img
+                          src="https://promos.makemytrip.com/images/myBiz/MICE/mice%20icon%20-%20square.png"
+                          alt="MICE_image"
+                          style="width: 28px; height: 28px"
+                      /></span>
+                      <div
+                        class="choosFrom__list--itemDesc makeFlex column flexOne"
+                      >
+                        <p class="font14"><span>MICE</span></p>
+                        <span class="appendTop3 font12"
+                          >Offsites, Events &amp; Meetings</span
+                        >
                       </div>
-                      <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true"
-                        style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-8"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=cabs&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage8"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel8" class="capText appendBottom5">CABS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl8"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Flat 10% OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx8" class="font14 lineHeight16">on Hourly Rental Cabs &amp;
-                                    Bring Your Travel Dreams to Life. </p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl8"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText8"
-                                    class="font14 primaryText latoBlack pushRight capText">View Details</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div data-cy="suUrl-9"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=buses&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage9"></div>
-                                </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel9" class="capText appendBottom5">RAILS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl9"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">BRING YOUR TRAVEL
-                                    DREAMS TO LIFE WITH: </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx9" class="font14 lineHeight16">ZERO* Convenience Fee on Your
-                                    1st Train Booking!</p>
-                                </div>
-                              </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl9"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText9"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    </li>
+                    <li class="choosFrom__list--item">
+                      <span class="appendRight12"
+                        ><img
+                          src="https://promos.makemytrip.com/appfest/2x/gift%20card%201.png"
+                          alt="Gift Cards_image"
+                          style="width: 28px; height: 28px"
+                      /></span>
+                      <div
+                        class="choosFrom__list--itemDesc makeFlex column flexOne"
+                      >
+                        <p class="font14"><span>Gift Cards</span></p>
                       </div>
-                      <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true"
-                        style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-10"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=flights&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage10"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="landingCard appendBottom20 superOfferSection page-section sticky-scroll personalOffers"
+                id="Offers_Listing"
+              >
+                <div class="makeFlex blackText appendBottom20">
+                  <h2 class="fontFamilyHeading allCardsHeader">
+                    <font color="#393939">Offers</font>
+                  </h2>
+                  <div class="makeFlex perfectCenter">
+                    <ul class="makeFlex nrlText superOffersTab appendLeft30">
+                      <li class="active latoBlack">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_ALL"
+                          ><span> All Offers </span></a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_BANK_OFFERS"
+                          ><span> Bank Offers </span></a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_FLIGHTS"
+                          ><span> Flights </span></a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_HOTELS"
+                          ><span> Hotels </span></a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_HOLIDAYS"
+                          ><span> Holidays </span></a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_RAILS"
+                          ><span> Trains </span></a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="makeFlex hrtlCenter column darkGreyText"
+                          id="superOffersTab_CABS"
+                          ><span> Cabs </span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <span
+                    class="pushRight makeFlex hrtlCenter font16 blueText latoBlack cursorPointer"
+                    >View All<span
+                      class="blueArrowIcon landingSprite appendLeft10"
+                    ></span
+                  ></span>
+                </div>
+                <div
+                  class="landingCardSlider superOffers"
+                  style="direction: ltr"
+                >
+                  <div class="slick-slider slick-initialized">
+                    <div class="slick-list">
+                      <div
+                        class="slick-track"
+                        style="
+                          width: 23716px;
+                          opacity: 1;
+                          transform: translate3d(0px, 0px, 0px);
+                        "
+                      >
+                        <div
+                          class="slick-slide slick-active slick-current"
+                          tabindex="-1"
+                          aria-hidden="false"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative">
+                                      <img
+                                        src="https://promos.makemytrip.com/notification/xhdpi//12345678987654321.jpg?im=Resize=(134,134)"
+                                        height="134"
+                                        width="134"
+                                        alt=""
+                                        loading="lazy"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      DOM FLIGHTS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to 20% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on Domestic Flights &amp; Bring Your
+                                      Travel Dreams to Life.
+                                    </p>
+                                  </div>
                                 </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel10" class="capText appendBottom5">INTL FLIGHTS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl10"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Up to ₹15,000 OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx10" class="font14 lineHeight16">on flights to/from USA and
-                                    Canada </p>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
                                 </div>
                               </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl10"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText10"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative">
+                                      <img
+                                        src="https://promos.makemytrip.com/notification/xhdpi//DH-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
+                                        height="134"
+                                        width="134"
+                                        alt=""
+                                        loading="lazy"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      DOM HOTELS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to 40% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on Hotels in India &amp; Bring Your Travel
+                                      Dreams to Life.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div>
-                          <div data-cy="suUrl-11"
-                            data-cy-url="https://www.makemytrip.com/promos/indian-bank-dc-10072023.html?detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage11"></div>
+                        <div
+                          class="slick-slide slick-active"
+                          tabindex="-1"
+                          aria-hidden="false"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative">
+                                      <img
+                                        src="https://promos.makemytrip.com/notification/xhdpi//12234346567.jpg?im=Resize=(134,134)"
+                                        height="134"
+                                        width="134"
+                                        alt=""
+                                        loading="lazy"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      INTL FLIGHTS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to ₹15,000 OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on International Flights &amp; Bring Your
+                                      Travel Dreams to Life.
+                                    </p>
+                                  </div>
                                 </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel11" class="capText appendBottom5">INTL FLIGHTS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl11"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Grab Up to 15% OFF*
-                                    on</p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx11" class="font14 lineHeight16">domestic &amp; international
-                                    flights + hotels for your refreshing travel breaks!</p>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
                                 </div>
                               </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl11"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><span data-cy="superOfferCC11"
-                                    class="latoRegular font14 darkText">Code: MMTINDBANK</span><a
-                                    data-cy="superOfferCtaText11"
-                                    class="font14 primaryText latoBlack pushRight capText">View Details</a></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative">
+                                      <img
+                                        src="https://promos.makemytrip.com/notification/xhdpi//IH-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
+                                        height="134"
+                                        width="134"
+                                        alt=""
+                                        loading="lazy"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      INTL HOTELS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to 30% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on International Hotels &amp; Bring Your
+                                      Travel Dreams to Life.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >BOOK NOW</a
+                                    >
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true"
-                        style="outline: none; width: 484px;">
-                        <div>
-                          <div data-cy="suUrl-12"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=flights&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage12"></div>
+                        <div
+                          class="slick-slide slick-active"
+                          tabindex="-1"
+                          aria-hidden="false"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative">
+                                      <img
+                                        src="https://promos.makemytrip.com/notification/xhdpi//Hol-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
+                                        height="134"
+                                        width="134"
+                                        alt=""
+                                        loading="lazy"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      HOLIDAYS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to 35% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on Holiday Packages &amp; Bring Your
+                                      Travel Dreams to Life.
+                                    </p>
+                                  </div>
                                 </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel12" class="capText appendBottom5">INTL FLIGHTS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl12"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Up to ₹12,500 OFF*
-                                  </p><span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx12" class="font14 lineHeight16">on flights to/from Europe
-                                    &amp; UK </p>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >BOOK NOW</a
+                                    >
+                                  </div>
                                 </div>
                               </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl12"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText12"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative">
+                                      <img
+                                        src="https://promos.makemytrip.com/notification/xhdpi//OSCabs-Desktop-TTBL-6Jul.jpg?im=Resize=(134,134)"
+                                        height="134"
+                                        width="134"
+                                        alt=""
+                                        loading="lazy"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      CABS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Bring Your Travel Dreams to Life With:
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      Flat 10% OFF* on Outstation Cabs.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div>
-                          <div data-cy="suUrl-13"
-                            data-cy-url="https://www.makemytrip.com/promos/tick-that-bucket-list-sale-070723.html?view=app&amp;tab=flights&amp;detail_image=no"
-                            class="slideItem" tabindex="-1" style="width: 100%; display: inline-block;">
-                            <div class="makeFlex column itemCard">
-                              <div class="makeFlex cardInnerInfo">
-                                <div class="itemThumb makeFlex column hrtlCenter appendRight20">
-                                  <div class="itemImgWrap makeRelative" data-cy="superOfferImage13"></div>
+                        <div
+                          class="slick-slide"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      DOM HOTELS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to 50% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on Homestays &amp; Villas in India and
+                                      Bring Your Travel Dreams to Life.
+                                    </p>
+                                  </div>
                                 </div>
-                                <div class="itemDesc">
-                                  <p class="font12 latoBold categTitle appendBottom5">
-                                  <div data-cy="superOfferLobLabel13" class="capText appendBottom5">INTL FLIGHTS</div>
-                                  </p>
-                                  <p data-cy="superOfferPtl13"
-                                    class="blackText font18 lineHeight22 appendBottom10 latoBlack">Up to ₹5,000 OFF*</p>
-                                  <span class="redBdr appendBottom10"></span>
-                                  <p data-cy="superOfferPtx13" class="font14 lineHeight16">on flights to/from South-East
-                                    Asia </p>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
                                 </div>
                               </div>
-                              <div class="sliderFoot"><span class="sliderFoot__left"><span data-cy="superOfferUrl13"
-                                    class="darkGreyText font12 tcApplyText appendRight20">T&amp;C's Apply</span></span>
-                                <div class="makeFlex hrtlCenter spaceBetween flexOne"><a data-cy="superOfferCtaText13"
-                                    class="font14 primaryText latoBlack pushRight capText">Book Now</a></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      CABS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Flat 5% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on Airport Cabs &amp; Bring Your Travel
+                                      Dreams to Life.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="slick-slide"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      CABS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Flat 10% OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on Hourly Rental Cabs &amp; Bring Your
+                                      Travel Dreams to Life.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      RAILS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      BRING YOUR TRAVEL DREAMS TO LIFE WITH:
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      ZERO* Convenience Fee on Your 1st Train
+                                      Booking!
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="slick-slide"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      INTL FLIGHTS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Up to ₹15,000 OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on flights to/from USA and Canada
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      INTL FLIGHTS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Grab Up to 15% OFF* on
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      domestic &amp; international flights +
+                                      hotels for your refreshing travel breaks!
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <span class="latoRegular font14 darkText"
+                                      >Code: MMTINDBANK</span
+                                    ><a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="slick-slide"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="outline: none; width: 484px"
+                        >
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      INTL FLIGHTS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Up to ₹12,500 OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on flights to/from Europe &amp; UK
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="slideItem"
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                            >
+                              <div class="makeFlex column itemCard">
+                                <div class="makeFlex cardInnerInfo">
+                                  <div
+                                    class="itemThumb makeFlex column hrtlCenter appendRight20"
+                                  >
+                                    <div class="itemImgWrap makeRelative"></div>
+                                  </div>
+                                  <div class="itemDesc">
+                                    <p
+                                      class="font12 latoBold categTitle appendBottom5"
+                                    ></p>
+                                    <div class="capText appendBottom5">
+                                      INTL FLIGHTS
+                                    </div>
+                                    <p></p>
+                                    <p
+                                      class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                                    >
+                                      Up to ₹5,000 OFF*
+                                    </p>
+                                    <span class="redBdr appendBottom10"></span>
+                                    <p class="font14 lineHeight16">
+                                      on flights to/from South-East Asia
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="sliderFoot">
+                                  <span class="sliderFoot__left"
+                                    ><span
+                                      class="darkGreyText font12 tcApplyText appendRight20"
+                                      >T&amp;C's Apply</span
+                                    ></span
+                                  >
+                                  <div
+                                    class="makeFlex hrtlCenter spaceBetween flexOne"
+                                  >
+                                    <a
+                                      class="font14 primaryText latoBlack pushRight capText"
+                                      >Book Now</a
+                                    >
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -925,12 +1536,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </main>
           </main>
-        </main>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
